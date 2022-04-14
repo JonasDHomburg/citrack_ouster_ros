@@ -43,4 +43,10 @@
   <node pkg="topic_tools" name="relay_lidar" type="relay" args="/os1_node/lidar_packets /os_node/lidar_packets" />
   <node pkg="topic_tools" name="relay_imu" type="relay" args="/os1_node/imu_packets /os_node/imu_packets" />
 
+  <node pkg="calibration" type="dynamic_transform_publisher" name="tf_citrack_floor_os_lidar">
+    <param name="tf" value="-2.65 0.05 0.04 0 0 0"/>
+    <param name="source_frame" value="citrack/base_link"/>
+    <param name="target_frame" value="os_sensor"/>
+    <param name="rate" value="50.0"/>
+  </node>
 </launch>
