@@ -99,3 +99,5 @@ install(FILES ../LICENSE ../LICENSE-bin ouster.launch viz.rviz
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
 
 file(COPY "launch/citrack_ouster.launch" DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+file(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/config)
+file(COPY "../config/os1_122027000103.json" DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/config/)

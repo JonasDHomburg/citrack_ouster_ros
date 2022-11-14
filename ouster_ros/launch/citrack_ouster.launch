@@ -1,5 +1,4 @@
 <launch>
-
   <!--<arg name="sensor_hostname" default="os1-122036000172.local" doc="hostname or IP in dotted decimal form of the sensor"/>-->
   <arg name="sensor_hostname" default="os1-122027000103.local" doc="hostname or IP in dotted decimal form of the sensor"/>
   <arg name="udp_dest" default="" doc="hostname or IP where the sensor will send data packets"/>
@@ -8,7 +7,7 @@
   <arg name="replay" default="false" doc="do not connect to a sensor; expect /os_node/{lidar,imu}_packets from replay"/>
   <arg name="lidar_mode" default="" doc="resolution and rate: either 512x10, 512x20, 1024x10, 1024x20, or 2048x10"/>
   <arg name="timestamp_mode" default="" doc="method used to timestamp measurements: TIME_FROM_INTERNAL_OSC, TIME_FROM_SYNC_PULSE_IN, TIME_FROM_PTP_1588"/>
-  <arg name="metadata" default="/home/twbnuc1/catkin_ws/src/ouster/config/os1_122027000103.json" doc="path to read or write metadata file when replaying or receiving sensor data, respectively"/>
+  <arg name="metadata" default="$(find ouster_ros)/../config/os1_122027000103.json" doc="path to read or write metadata file when replaying or receiving sensor data, respectively"/>
   <arg name="viz" default="false" doc="whether to run a rviz"/>
   <arg name="rviz_config" default="-d $(find ouster_ros)/viz.rviz" doc="optional rviz config file"/>
   <arg name="tf_prefix" default="" doc="namespace for tf transforms"/>
