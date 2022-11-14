@@ -1,5 +1,6 @@
 <launch>
 
+  <!--<arg name="sensor_hostname" default="os1-122036000172.local" doc="hostname or IP in dotted decimal form of the sensor"/>-->
   <arg name="sensor_hostname" default="os1-122027000103.local" doc="hostname or IP in dotted decimal form of the sensor"/>
   <arg name="udp_dest" default="" doc="hostname or IP where the sensor will send data packets"/>
   <arg name="lidar_port" default="0" doc="port to which the sensor should send lidar data"/>
